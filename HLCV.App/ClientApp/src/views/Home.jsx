@@ -3,6 +3,7 @@ import './Home.css';
 import ReservationFilterBar from '../components/Reservation Filter Bar/ReservationFilterBar';
 import Banner from '../components/Banner/Banner';
 import { NavMenu } from '../components/NavMenu';
+import BookNowButton from '../components/Book Now Button/BookNowBtn';
 
 function Home() {
     return(
@@ -23,7 +24,7 @@ function Home() {
                 </div>
                 <div className='side-image col-6'>
                     <div className="bg-overlay-si d-flex justify-content-end">
-                        <button className='mt-3 mx-5 px-5 py-2 btn-book-now'>Book Now</button>
+                        <BookNowButton />
                     </div>
                 </div>
             </section>
@@ -34,9 +35,6 @@ function Home() {
                         <div className="col-12 align-self-center">
                             <h2 className='mt-w'>Our Services</h2>
                             <p className='mt-4'>Discover a world of comfort and impeccable hospitality at Hotel Lake and City View. Located in the heart of Kandy city. Our hotel offers an unforgettable experience for leisure travelers. From the moment you step through our doors, you will be greeted by our friendly staff, dedicated to ensuring your stay is nothing short of extraordinary.</p>
-                        </div>
-                        <div>
-                            <button className='mt-4 explore-btn px-5'>Explore</button>
                         </div>
                     </div>
                     <div className="col-5 mt-5 services-bg">

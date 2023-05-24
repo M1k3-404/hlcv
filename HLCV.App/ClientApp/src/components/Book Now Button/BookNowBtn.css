@@ -1,0 +1,13 @@
+.btn-book-now {
+    color: #423C46;
+    background: none;
+    border: 1px solid #423C46;
+    height: 5vh;
+}
+
+.btn-book-now:hover {
+    color: #fff;
+    background-color: #423C46;
+    border: 1px solid #423C46;
+    height: 5vh;
+}

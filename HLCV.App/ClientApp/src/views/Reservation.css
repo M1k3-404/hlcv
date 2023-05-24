@@ -1,0 +1,58 @@
+.Book-content {
+    margin-left: 90px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.headingContact{
+    font-size: 90px;
+    font-weight: 800s;
+}
+
+.hrBook{
+    border: 2px solid black;
+    width: 30vw;
+}
+
+.full-width {
+    width: 99vw;
+}
+
+.accordion-image{
+    height: 25vh;
+    width: 30vh;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 130px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.counter-button-Minus{   
+    margin-right: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.counter-button-Plus{
+    margin-left: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.line2{
+    border-top: 1px solid #000; /* Add bottom line */
+   
+}
+
+.checkout {
+    height: 10vh;
+    width: 99vw;
+    overflow: hidden;
+    font-size: large;
+}

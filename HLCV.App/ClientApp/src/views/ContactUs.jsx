@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 import { NavMenu } from "../components/NavMenu";
+import BookNowButton from "../components/Book Now Button/BookNowBtn";
 
 function ContactUs() {
     return(
@@ -20,7 +21,7 @@ function ContactUs() {
                 </div>
                 <div className="ContactImage col-6">
                     <div className="bg-overlay-si d-flex justify-content-end">
-                        <button className="mt-3 mx-5 px-5 py-2 btn-book-now">Book Now</button>
+                        <BookNowButton />
                     </div>
                 </div>
             </section>
