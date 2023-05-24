@@ -9,7 +9,7 @@ function Home() {
         <React.StrictMode>
             <NavMenu />
             <section className='d-flex home-header'>
-                <div className='col-6 header-content d-flex justify-content-center align-items-center'>
+                <div className='header-content d-flex justify-content-center align-items-center col-6'>
                     <div className="content">
                         <h1 className="text-center">Experience</h1>
                         <div className="d-flex justify-content-center align-items-center">
@@ -21,12 +21,14 @@ function Home() {
                         <h1 className="text-center text-indie-flower">Expectations</h1>
                     </div>
                 </div>
-                <div className='col-6 side-image d-flex justify-content-end'>
-                    <button className='mt-3 mx-5 px-5 py-2 btn-book-now'>Book Now</button>
+                <div className='side-image col-6'>
+                    <div className="bg-overlay-si d-flex justify-content-end">
+                        <button className='mt-3 mx-5 px-5 py-2 btn-book-now'>Book Now</button>
+                    </div>
                 </div>
             </section>
             <ReservationFilterBar />
-            <section>
+            <section className='our-services-sect'>
                 <div className="d-flex justify-content-evenly">
                     <div className='col-5 align-self-center'>
                         <div className="col-12 align-self-center">
@@ -37,17 +39,25 @@ function Home() {
                             <button className='mt-4 explore-btn px-5'>Explore</button>
                         </div>
                     </div>
-                    <div className="col-6 mt-5 services-bg" />
+                    <div className="col-5 mt-5 services-bg">
+                        <div className='bg-overlay' />
+                    </div>
                 </div>
                 <div className="d-flex mt-4 mb-5 justify-content-evenly">
-                    <div className="col-3 bg-stay-in rounded d-flex align-items-center justify-content-center">
-                        <h4 className='m-0 text-white'>Stay-In</h4>
+                    <div className="col-3 bg-stay-in rounded">
+                        <div className='bg-overlay rounded d-flex align-items-center justify-content-center'>
+                            <h4 className='m-0 text-white'>Stay-In</h4>
+                        </div>
                     </div>
-                    <div className="col-3 bg-stay-in rounded d-flex align-items-center justify-content-center">
-                        <h4 className='m-0 text-white'>Restaurant</h4>
+                    <div className="col-3 bg-stay-in rounded">
+                        <div className='bg-overlay rounded d-flex align-items-center justify-content-center'>
+                            <h4 className='m-0 text-white'>Restaurant</h4>
+                        </div>
                     </div>
-                    <div className="col-3 bg-stay-in rounded d-flex align-items-center justify-content-center">
-                        <h4 className='m-0 text-white'>Spa</h4>
+                    <div className="col-3 bg-stay-in rounded">
+                        <div className='bg-overlay rounded d-flex align-items-center justify-content-center'>
+                            <h4 className='m-0 text-white'>Spa</h4>
+                        </div>
                     </div>
                 </div>
             </section>

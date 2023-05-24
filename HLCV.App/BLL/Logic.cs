@@ -14,9 +14,9 @@ namespace HLCV.App.BLL
             //Calculate Total
             double total = 0;
             foreach (var room in booking.RoomSelectected) 
-            { 
+            {
 
-                total += room.Quantity*room.RoomType
+                total += room.Quantity * room.RoomType;
             }
 
         }

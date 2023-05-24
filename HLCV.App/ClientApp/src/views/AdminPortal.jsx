@@ -4,17 +4,17 @@ import './AdminPortal.css';
 function AdminPortal() {
     return (
         <React.StrictMode>
-            <section>
+            <section className='full-width mt-5'>
                 <h1 className="text-center mt-5">Welcome <span className='text-indie-flower'>to</span></h1>
                 <h1 className='text-center'>Hotel Lake and City View</h1>
             </section>
-            <section>
+            <section className='full-width'>
                 <div className='mx-auto mt-5 form-group col-8'>
-                    <label for="userId" className='mt-5 form-label'>Service ID</label>
+                    <label for="userId" className='h3 mt-5 form-label'>Service ID</label>
                     <input type="text" className="rounded-0 form-control" id="userId"></input>
                 </div>
-                <div className='mx-auto mt-1 form-group col-8'>
-                    <label for="password" className='mt-5 form-label'>Password</label>
+                <div className='mx-auto mt-1 mb-5 form-group col-8'>
+                    <label for="password" className='h3 mt-5 form-label'>Password</label>
                     <input type="password" className="rounded-0 form-control" id="password"></input>
                 </div>
                 <div className='d-flex justify-content-center'>

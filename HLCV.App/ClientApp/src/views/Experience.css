@@ -1,0 +1,63 @@
+.home-header {
+    position: relative;
+    top: 0;
+    width: 100vw;
+}
+
+.header-content {
+    padding-top: 10vh;
+    width: 50vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.expHeading {
+    font-size: 90px;
+    font-weight: 800s;
+    margin-top: 100px;
+}
+
+.hrStory {
+    border: 2px solid black;
+}
+
+.contentStory {
+    text-align: justify;
+    margin-right: 48px;
+}
+
+.expImage {
+    height: 100vh;
+    background-image: url('../media/Bridge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Kandy-content{
+    margin-left: 110px;
+}
+
+.Kandy-Heading{
+    font-size:50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.place-content{
+    margin-left: 100px;
+    margin-top: 50px !important;
+}
+
+.KandyImages{
+    height: 25vh;
+    width: 30vh;
+}

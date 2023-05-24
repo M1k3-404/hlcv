@@ -1,0 +1,47 @@
+.home-header {
+    position: relative;
+    top: 0;
+    width: 100vw;
+}
+
+.header-content {
+    padding-top: 10vh;
+    width: 50vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.Contact {
+    margin-top: 110px;
+}
+
+.headingContact{
+    font-size: 90px;
+    font-weight: 800s;
+}
+
+.hrStory {
+    border: 2px solid black;
+}
+
+.Contact-Info{
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: 100px;   
+}
+
+.ContactImage{
+    height: 100vh;
+    background-image: url('../media/Office.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

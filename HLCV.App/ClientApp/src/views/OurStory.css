@@ -1,0 +1,86 @@
+.home-header {
+    position: relative;
+    top: 0;
+    width: 98vw;
+}
+
+.header-content {
+    padding-top: 10vh;
+    height: 100vh;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    margin-left: 110px;
+    overflow: hidden;
+}
+
+.btn-book-now {
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    height: 5vh;
+}
+
+.btn-book-now:hover {
+    color: #fff;
+    background-color: #423C46;
+    border: 1px solid #423C46;
+    height: 5vh;
+}
+
+.headingStory {
+    font-size: 130px;
+    font-weight: 800s;
+}
+
+.contentStory {
+    text-align: justify;
+    margin-right: 48px;
+}
+
+.hrStory {
+    border: 2px solid black;
+}
+
+.storyImage {
+    height: 100vh;
+    background-image: url('../media/story-side.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-header{
+    margin-left: 110px;
+}
+
+.service-image {
+    aspect-ratio: 1/0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-stay-in {
+    background-image: url('../media/Bedroom.jpg');
+    aspect-ratio: 1/0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-restaurant {
+    background-image: url('../media/Restaurant.jpg');
+    aspect-ratio: 1/0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.serviceStory{
+    text-align: justify;
+}
