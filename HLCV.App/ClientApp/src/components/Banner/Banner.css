@@ -1,0 +1,18 @@
+.banner-bg {
+    height: 25vh;
+    background-image: url('../../media/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-explore {
+    background-color: #423C46;
+    color: #fff;
+    height: 60px;
+}
+
+.btn-explore:hover {
+    background-color: #202020;
+        color: #fff;
+}

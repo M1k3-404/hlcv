@@ -1,0 +1,21 @@
+.booking-border{
+    border: 1px solid #423C46;
+}
+
+.booking-img {
+    aspect-ratio: 1/1;
+    background-image: url('../../media/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-theme-dark {
+    background-color: #423C46;
+    color: #fff;
+}
+
+.btn-theme-dark:hover {
+    background-color: #202020;
+    color: #fff;
+}

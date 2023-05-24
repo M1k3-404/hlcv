@@ -1,0 +1,83 @@
+body {
+    background-color: #EFE4E0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inika', serif;
+}
+
+h1, h3 {
+    color: #423C46;
+}
+
+.home-header {
+    box-sizing: border-box;
+    top: 0;
+}
+
+.header-content {
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+.side-image {
+    height: 100vh;
+    background-image: url('../media/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.text-indie-flower {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 84px;
+    color: #9C705D;
+}
+
+.services-bg {
+    height: 50vh;
+    background-image: url('../media/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.explore-btn {
+    background-color: #423C46;
+    color: #fff;
+    height: 60px;
+}
+
+.explore-btn:hover {
+    background-color: #202020;
+    color: #fff;
+}
+
+.bg-stay-in {
+    height: 15vh;
+    background-image: url('../media/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-book-now {
+    color: #423C46;
+    background: none;
+    border: 1px solid #423C46;
+    height: 5vh;
+}
+
+.btn-book-now:hover {
+    color: #fff;
+    background-color: #423C46;
+    border: 1px solid #423C46;
+    height: 5vh;
+}

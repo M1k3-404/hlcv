@@ -1,0 +1,34 @@
+.sub-nav-border {
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #423C46;
+}
+
+.date-picker {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.date-picker:focus {
+    box-shadow: 0 0 5px black;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.number-input {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-theme-dark {
+    background-color: #423C46;
+    color: #fff;
+    height: 60px;
+}
+
+.btn-theme-dark:hover {
+    background-color: #202020;
+    color: #fff;
+}
