@@ -10,10 +10,10 @@
         public string? Email { get; set; }
         public string? MobileNumber { get; set; }
         public int NumberOfPeople { get; set; }
-        public List<int>? RoomSelectected { get; set; }
-        public DateTime? Arrival { get; set; }
-        public DateTime? Departure { get; set; }
-        public DateTime? TotalAmount { get; set;}
+        public List<Room>? RoomSelectected { get; set; }
+        public DateTime Arrival { get; set; }
+        public DateTime Departure { get; set; }
+        public double TotalAmount { get; set;}
 
     }
 }
