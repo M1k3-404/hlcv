@@ -19,3 +19,20 @@
     background-color: #202020;
     color: #fff;
 }
+
+.success-modal {
+    width: 60vw;;
+    height: 40vh;
+    top: 50vw;
+    left: 50vw;
+}
+
+.btn-close-modal {
+    color: #fff;
+    background: #423C46;
+}
+
+.btn-close-modal:hover {
+    color: #fff;
+    background: #202020;
+}

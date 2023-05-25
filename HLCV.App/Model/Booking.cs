@@ -14,6 +14,5 @@
         public DateTime Arrival { get; set; }
         public DateTime Departure { get; set; }
         public double TotalAmount { get; set;}
-
     }
 }
