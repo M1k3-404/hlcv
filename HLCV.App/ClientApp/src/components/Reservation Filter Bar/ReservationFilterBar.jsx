@@ -3,6 +3,10 @@ import { Form } from 'react-bootstrap';
 import './ReservationFilterBar.css';
 
 function ReservationFilterBar() {
+    const handleCheckout = () => {
+        window.location.href = '/reservation';
+    };
+
     return (
         <React.StrictMode>
             <section className='col-12 d-flex justify-content-around align-items-center sub-nav-border'>
@@ -18,7 +22,7 @@ function ReservationFilterBar() {
                     <h5>Number of People</h5>
                     <input type="number" className="number-input" placeholder="00" />
                 </div>
-                <button className="btn btn-theme-dark px-5 rounded-0">Book a Stay</button>
+                <button className="btn btn-theme-dark px-5 rounded-0" onClick={handleCheckout}>Book a Stay</button>
             </section>
         </React.StrictMode>
     )

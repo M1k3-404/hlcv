@@ -1,20 +1,28 @@
+<<<<<<< HEAD
 using HLCV.App.Model;
 
 var builder = WebApplication.CreateBuilder(args);
+=======
+using HLCV.App;
+using Microsoft.EntityFrameworkCore;
+>>>>>>> 733503bff5fe811ecb0c21c0c5a06dde4d5c1c68
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+builder.Services.AddDbContext<DBContextClass>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("HLCVDB"));
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

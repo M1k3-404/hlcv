@@ -1,7 +1,13 @@
 .booking-bg {
     background-color: #423C46;
+    width: 100vw;
 }
 
 .title {
     border-bottom: 1px solid #423C46;
+    width: 100vw;
+}
+
+.bookings-container {
+    width: 100vw;
 }

@@ -1,4 +1,9 @@
 /* Provide sufficient contrast against white background */
+main.container{
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: #0366d6;
 }
