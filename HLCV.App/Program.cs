@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-using HLCV.App.Model;
-
-var builder = WebApplication.CreateBuilder(args);
-=======
 using HLCV.App;
+using HLCV.App.Model;
 using Microsoft.EntityFrameworkCore;
->>>>>>> 733503bff5fe811ecb0c21c0c5a06dde4d5c1c68
 
 var builder = WebApplication.CreateBuilder(args);
 

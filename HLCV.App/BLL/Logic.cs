@@ -15,11 +15,10 @@ namespace HLCV.App.BLL
         }
         public void AddBooking(Booking booking)
         {
-<<<<<<< HEAD
             context.Add(booking);
             context.SaveChanges();
             int count = 0;
-            foreach (var item in booking.Quantity) 
+            foreach (var item in booking.Quantity)
             {
                 count++;
                 var bookingOrder = new BookingOrder
@@ -29,16 +28,6 @@ namespace HLCV.App.BLL
                     Quantity = item,
                 };
                 context.Add(bookingOrder);
-=======
-            //Get Number of days between 
-            var numberOfDays = (booking.Departure - booking.Arrival).TotalDays;
-            //Calculate Total
-            double total = 0;
-            foreach (var room in booking.RoomSelectected) 
-            {
-
-                total += room.Quantity * room.RoomType;
->>>>>>> 733503bff5fe811ecb0c21c0c5a06dde4d5c1c68
             }
             context.SaveChanges(); 
         }
