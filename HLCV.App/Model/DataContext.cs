@@ -17,7 +17,7 @@ namespace HLCV.App.Model
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server = DESKTOP-EQQEGB1; Database = HLCV_DB; Trusted_Connection = true; TrustServerCertificate = true");
+            optionsBuilder.UseSqlServer("Server = MIKE; Database = HLCV_DB; Trusted_Connection = true; TrustServerCertificate = true");
         }
 
         public DbSet<Booking> Bookings { get; set; }

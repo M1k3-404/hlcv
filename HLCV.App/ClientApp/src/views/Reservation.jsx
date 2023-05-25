@@ -3,12 +3,20 @@ import { Form } from "react-bootstrap";
 import "./Reservation.css";
 import Bedroom from "../media/Bedroom.jpg"
 import { NavMenu } from '../components/NavMenu';
-import ReservationFilterBar from '../components/Reservation Filter Bar/ReservationFilterBar';
 
 function Reservation({ title, image, text }) {
     const [arrivalDate, setArrivalDate] = useState("");
     const [departureDate, setDepartureDate] = useState("");
     const [numOfPeople, setNumOfPeople] = useState(0);
+    const [totalCount, setTotalCount] = useState(0);
+
+    const handleButtonClick = () => {
+  
+        const queryString = `?arrivalDate=${arrivalDate}&departureDate=${departureDate}&numOfPeople=${numOfPeople}&totalCount=${totalCount}`;
+        const reservationUrl = `/reservation${queryString}`;
+      
+        window.location.href = reservationUrl;
+    };
 
     // Constants for the first accordion
     const [isOpen1, setIsOpen1] = useState(false);
@@ -20,11 +28,13 @@ function Reservation({ title, image, text }) {
 
     const handleIncrement1 = () => {
     setCount1(count1 + 1);
+    setTotalCount(totalCount + 1);
     };
 
     const handleDecrement1 = () => {
     if (count1 > 0) {
         setCount1(count1 - 1);
+        setTotalCount(totalCount - 1);
     }
     };
 
@@ -38,11 +48,13 @@ function Reservation({ title, image, text }) {
 
     const handleIncrement2 = () => {
     setCount2(count2 + 1);
+    setTotalCount(totalCount + 1);
     };
 
     const handleDecrement2 = () => {
     if (count2 > 0) {
         setCount2(count2 - 1);
+        setTotalCount(totalCount - 1);
     }
     };
 
@@ -56,16 +68,14 @@ function Reservation({ title, image, text }) {
 
     const handleIncrement3 = () => {
     setCount3(count3 + 1);
+    setTotalCount(totalCount + 1);
     };
 
     const handleDecrement3 = () => {
     if (count3 > 0) {
         setCount3(count3 - 1);
+        setTotalCount(totalCount - 1);
     }
-    };
-
-    const handleCheckout = () => {
-    window.location.href = '/checkout';
     };
  
     return (
@@ -92,7 +102,7 @@ function Reservation({ title, image, text }) {
                     <h5>Number of People</h5>
                     <input type="number" className="number-input" placeholder="00" value={numOfPeople} onChange={(e) => setNumOfPeople(parseInt(e.target.value))} />
                 </div>
-                <button className="btn btn-theme-dark px-5 rounded-0" onClick={handleCheckout}>Book a Stay</button>
+                <button className="btn btn-theme-dark px-5 rounded-0" onClick={handleButtonClick} disabled={numOfPeople === 0 || !arrivalDate || !departureDate || new Date(departureDate) - new Date(arrivalDate) < 86400000 || (count1 === 0 && count2 === 0 && count3 === 0)}>Book a Stay</button>
             </section>
             <section className='full-width'>
                 <div className={`accordion ${isOpen1 ? 'open' : ''} line`}>
@@ -233,7 +243,7 @@ function Reservation({ title, image, text }) {
                 </div>
             </section>
             <section>
-                <button className='checkout-button py-5 btn-dark full-width' onClick={handleCheckout} disabled={numOfPeople === 0 || !arrivalDate || !departureDate || new Date(departureDate) - new Date(arrivalDate) < 86400000 || (count1 === 0 && count2 === 0 && count3 === 0)}>
+                <button className='checkout-button py-5 btn-dark full-width' onClick={handleButtonClick} disabled={numOfPeople === 0 || !arrivalDate || !departureDate || new Date(departureDate) - new Date(arrivalDate) < 86400000 || (count1 === 0 && count2 === 0 && count3 === 0)}>
                     Checkout
                 </button>
             </section>

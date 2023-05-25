@@ -4,7 +4,7 @@ import './ReservationFilterBar.css';
 
 function ReservationFilterBar() {
     const handleCheckout = () => {
-        window.location.href = '/reservation';
+        window.location.href = '/reserve';
     };
 
     return (

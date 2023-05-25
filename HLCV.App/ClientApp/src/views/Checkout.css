@@ -1,0 +1,98 @@
+.Book-content {
+    margin-left: 90px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.headingContact{
+    font-size: 90px;
+    font-weight: 800s;
+}
+
+.hrBook{
+    border: 2px solid black;
+    width: 30vw;
+}
+
+.accordion{
+    margin-left: 100px;
+}
+
+.accordion-image{
+    height: 25vh;
+    width: 30vh;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 130px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.counter-button-Minus{  
+    margin-right: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.counter-button-Plus{
+    margin-left: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reservation-content{
+    margin-left: 110px;
+}
+
+.form{
+margin-left: 110px;
+width:120px;
+
+}
+
+
+.check-in{
+margin-left: 140px !important;
+width:120px;
+}
+
+.Departure{
+margin-left: 180px;
+}
+
+.people{
+width: 100px;
+margin-left: 130px;
+}
+
+.Total{
+margin-right: 50px;
+}
+
+.room{
+margin-left: 162px;
+}
+
+.forms{
+margin-left: 110px;
+}
+
+Form.control{
+width: 30px;
+}
+
+.btn-theme-dark {
+    background-color: #423C46;
+    color: #fff;
+    height: 60px;
+}
+
+.btn-theme-dark:hover {
+    background-color: #202020;
+    color: #fff;
+}

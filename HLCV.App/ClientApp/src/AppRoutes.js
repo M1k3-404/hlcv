@@ -25,11 +25,11 @@ const AppRoutes = [
     element: <ContactUs />
   },
   {
-    path: '/reservation',
+    path: '/reserve',
     element: <Reservation />
   },
   {
-    path: '/checkout',
+    path: '/reservation',
     element: <Checkout />
   },
   {

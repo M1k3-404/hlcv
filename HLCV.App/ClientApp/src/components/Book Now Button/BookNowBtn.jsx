@@ -2,7 +2,7 @@ import React from 'react';
 import './BookNowBtn.css';
 
 const handleCheckout = () => {
-    window.location.href = '/reservation';
+    window.location.href = '/reserve';
 };
 
 function BookNowButton() {

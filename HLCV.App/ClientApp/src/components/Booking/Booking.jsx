@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './Booking.css';
 
-function Booking() {
+function Booking(props) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [isComponentVisible, setComponentVisible] = useState(true);
+
+    const hideComponent = () => {
+        setComponentVisible(false);
+    };
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -11,41 +16,45 @@ function Booking() {
 
     const closeModal = () => {
         setModalIsOpen(false);
+        hideComponent();
     };
 
     return(
         <React.StrictMode>
-            <div className='col-11 mx-auto mt-4 booking-border d-flex justify-content-around'>
+            { isComponentVisible &&
+                <div>
+                    <div className='col-11 mx-auto mt-4 booking-border d-flex justify-content-around'>
                 <div className='col-2 my-3 booking-img' /> 
                 <div className='col-9 mt-3'>
-                    <h3>Booking Id: <span>02hdj238</span></h3>
+                    <h3>Booking Id: <span>{props.booking.BookingCode}</span></h3>
                     <div className='mt-2 col-12 d-flex'>
                         <div className='col-6'>
-                            <h5>Checking-In Date: <span>06/04/2023</span></h5>
-                            <h5>Checking-Out Date: <span>08/04/2023</span></h5>
-                            <h5>No. of Guests: <span>03</span></h5>
+                            <h5>Checking-In Date: <span>{props.booking.Arrival}</span></h5>
+                            <h5>Checking-Out Date: <span>{props.booking.Departure}</span></h5>
+                            <h5>No. of Guests: <span>{props.booking.NumberOfPeople}</span></h5>
                         </div>
                         <div className='col-6'>
                             <h5>Rooms: </h5>
-                            <h5><span>1</span> <span>Deluxe Double Room</span></h5>
-                            <h5><span>1</span> <span>Deluxe Twin Room</span></h5>
+                            <h5><span>{props.booking.SDR}</span> <span> x Standard Double Room</span></h5>
+                            <h5><span>{props.booking.STR}</span> <span> x Standard Triple Room</span></h5>
+                            <h5><span>{props.booking.DRB}</span> <span> x Double Room with Balcony</span></h5>
                         </div>
                     </div>
                     <hr />
                     <div className='mt-2 col-12 d-flex'>
                         <div className='col-6'>
-                            <h5>First Name: <span>Andrew</span></h5>
-                            <h5>Last Name: <span>San</span></h5>
-                            <h5>NIC: <span>0323452132</span></h5>
+                            <h5>First Name: <span>{props.booking.FirstName}</span></h5>
+                            <h5>Last Name: <span>{props.booking.LastName}</span></h5>
+                            <h5>NIC: <span>{props.booking.NIC}</span></h5>
                         </div>
                         <div className='col-6'>
-                            <h5>Contact No: <span>453543254524</span></h5>
-                            <h5>Email: <span>Andrew.San@gmail.com</span></h5>
+                            <h5>Contact No: <span>{props.booking.Email}</span></h5>
+                            <h5>Email: <span>{props.booking.MobileNumber}</span></h5>
                         </div>
                     </div>
                     <div className='my-3 d-flex col-12 justify-content-end'>
                         <button className='px-3 mx-3 py-0 btn-theme-dark' onClick={openModal}>Proceed</button>
-                        <button className='px-3 mx-3 py-0 btn-theme-dark'>Cancel Reservation</button>
+                        <button className='px-3 mx-3 py-0 btn-theme-dark' onClick={hideComponent}>Cancel Reservation</button>
                     </div>
                 </div>
             </div>
@@ -59,6 +68,10 @@ function Booking() {
                     </div>
                 </div>
             </Modal>
+                </div>
+                
+            }
+            
         </React.StrictMode>
     )
 }

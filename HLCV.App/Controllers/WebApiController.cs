@@ -1,5 +1,6 @@
 ﻿using HLCV.App.BLL;
 using HLCV.App.Model;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
 
@@ -7,6 +8,7 @@ namespace HLCV.App.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class WebApiController : Controller
     {
         private readonly DataContext datacontext;
