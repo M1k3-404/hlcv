@@ -14,11 +14,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-builder.Services.AddDbContext<DBContextClass>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("HLCVDB"));
-});
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
