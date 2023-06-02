@@ -17,6 +17,48 @@ namespace HLCV.App.Controllers
             datacontext = context;
         }
 
+        [HttpPost("Register")]
+        public ActionResult Register(string password)
+        {
+            try
+            {
+                var userExists = new Logic(datacontext).Register(password);
+                if (userExists)
+                {
+                    return Ok("User is Added");
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+        }
+
+        [HttpPost("Login")]
+        public ActionResult Login(int Id, string password)
+        {
+            try
+            {
+                var userExists = new Logic(datacontext).Login(Id, password);
+                if (userExists)
+                {
+                    return Ok("User is Authenticayed");
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+        }
+
         [HttpPost("AddBooking")]
         public ActionResult AddBooking(Booking booking)
         {

@@ -58,5 +58,36 @@ namespace HLCV.App.BLL
             context.Remove(booking);
             context.SaveChanges();
         }
+
+        public bool Login(int Id, string password)
+        {
+            var user = context.Users.FirstOrDefault(x => x.Id == Id && x.Password == password);
+            if (user != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool Register(string password)
+        {
+            if (context.Users.Any(x => x.Password == password))
+            {
+                return false;
+            }
+
+            var user = new User
+            {
+                Password = password
+            };
+
+            context.Users.Add(user);
+            context.SaveChanges();
+
+            return true;
+        }
     }
 }
